@@ -22,7 +22,7 @@ import com.google.appengine.api.urlfetch.HTTPResponse;
 public class DotGraphicsTestServlet extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
-		
+		// the url and port number of the graphviz-server
 		URL url = new URL("http://108.59.83.98:8080/svg");
 		HTTPRequest request = new HTTPRequest(url, HTTPMethod.POST, FetchOptions.Builder.withDeadline(10.0));
 		
